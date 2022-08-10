@@ -1,25 +1,30 @@
 //this is to do form validation
-function check(){
+function check() {
     var err = ''
     var errmsg = "The following Fields are empty: <br>"
-    if($('#clientName').val() == ""){
+    var state = "unchecked";
+    if ($('#clientName').val() == "") {
         err = err + "Client name. <br>";
     }
-    if($('#contractDateStart').val() == ""){
+    if ($('#contractDateStart').val() == "") {
         err = err + "Contract start date. <br>";
     }
-    if($('#contractDateEnd').val() == ""){
+    if ($('#contractDateEnd').val() == "") {
         err = err + "Contract end date. <br>";
     }
-    if($('#serviceCost').val() == ""){
+    if ($('#serviceCost').val() == "") {
         err = err + "Service cost. <br>";
     }
-    if($('#serviceDesc').val() == ""){
+    if ($('#serviceDesc').val() == "") {
         err = err + "Service description. <br>";
     }
-    if(err!=''){
-        $('#errors').html('<div class="alert alert-danger" role="alert">'+errmsg+err+'</div>');
-    }else{
-        
+    if (err != '') {
+        $('#errors').html('<div class="alert alert-danger" role="alert">' + errmsg + err + '</div>');
+    } else {
+        $('#errors').html('<button id="button" type="button" class="btn btn-primary btn-lg" onclick="generate()">Download</button>')
     }
 }
+
+
+
+
