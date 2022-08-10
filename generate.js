@@ -114,7 +114,7 @@ function generate() {
                     size: 12,
                     children: [
                         new docx.TextRun({
-                            text: 'Upfront:',
+                            text: '1.1  Upfront:',
                             bullet:{level:1}
                         }),
                     ]
@@ -142,7 +142,7 @@ function generate() {
                     size: 12,
                     children: [
                         new docx.TextRun({
-                            text: 'Month-to-month:',
+                            text: '1.2  Month-to-month:',
                             bullet:{level:1}
                         }),
                     ]
@@ -198,7 +198,8 @@ function generate() {
                     children: [
                         new docx.TextRun({
                             text: '2.2.	The reason for this fixed-term contract is for the appointment and completion of the [Service Description].',
-                            bullet:{level:1}
+                            bullet:{level:1},
+                            break:3,
                         }),
                     ]
                 }),
