@@ -56,8 +56,8 @@
         </div>
 
         <!-- Download button -->
-        <div class="form-group">
-            <button id="button" type="button" class="btn btn-primary btn-lg" onclick="check()">Generate</button>
+        <div class="form-group" id="buttonDiv">
+            <button id="button" type="button" class="btn btn-primary btn-lg buttons" onclick="check()">Generate</button>
         </div>
 
         <div>
@@ -109,7 +109,7 @@
             if (err != '') {
                 $('#errors').html('<div class="alert alert-danger" role="alert">' + errmsg + err + '</div>');
             } else {
-                $('#errors').html('<button id="button" type="button" class="btn btn-primary btn-lg" onclick="generate()">Download</button>')
+                $('#buttonDiv').html('<button id="button" type="button" class="btn btn-primary btn-lg" onclick="generate()">Download</button>')
             }
         }
     </script>
