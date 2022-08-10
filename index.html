@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <title>Lesedi's Request</title>
@@ -26,7 +26,24 @@
     <div class="container-fluid">
         <h1 id="heading">Lesedi's Document Template Converter</h1>
     </div>
-
+    <!--This is a collapsable information accordian-->
+    <div class="accordion container-fluid" id="accordionOne">
+        <div class="card">
+          <div class="card-header" id="headingOne">
+            <h5 class="mb-0">
+              <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                Information
+              </button>
+            </h5>
+          </div>
+      
+          <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionOne">
+            <div class="card-body">
+              Please fill out all information fields, after doing so hit generate. If there are no errors, the button will change to a download button.
+            </div>
+          </div>
+        </div>
+    </div>
     <!-- Application body -->
     <div class="textArea container-fluid">
         <!-- Text input areas -->
@@ -109,7 +126,12 @@
             if (err != '') {
                 $('#errors').html('<div class="alert alert-danger" role="alert">' + errmsg + err + '</div>');
             } else {
-                $('#buttonDiv').html('<button id="button" type="button" class="btn btn-primary btn-lg" onclick="generate()">Download</button>')
+                $('#buttonDiv').html('\
+                <div class="alert alert-success" role="alert">\
+                Your document is ready, please click download\
+                </div>\
+                <button id="button" type="button" class="btn btn-primary btn-lg" onclick="generate()">Download</button>\
+                ')
             }
         }
     </script>

@@ -9,14 +9,14 @@
 #heading {
     color: whitesmoke;
     text-shadow: 3px 3px rgb(97, 15, 145);
-    width: 90%;
+    width: 100%;
     text-align: center;
     margin-top: 10%;
 }
 
 .inputLabel{
     color: white;
-    text-shadow: 1px 1px black;
+    text-shadow: 2px 1px black;
 }
 
 .textArea{
@@ -32,6 +32,22 @@
 
 #button{
     margin-top: 10px;
-    margin-left: 35%;
+    margin-left: 36%;
     max-width: 200px;
+}
+
+#accordionOne{
+    width: 90%;
+    max-width: 500px;
+    align-self: center;
+    align-content: center;
+    color-scheme: grey;
+    padding: 10px;
+}
+
+.btn-link{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+    text-emphasis: bold;
 }
