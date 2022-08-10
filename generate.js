@@ -95,7 +95,6 @@ function generate() {
                 //page 2
                 new docx.Paragraph({
                     size: 12,
-                    alignment: docx.AlignmentType.LEFT,
                     children: [
                         new docx.TextRun({
                             text: '1. Payment terms: ',
@@ -104,7 +103,6 @@ function generate() {
                 }),
                 new docx.Paragraph({
                     size: 12,
-                    alignment: docx.AlignmentType.LEFT,
                     children: [
                         new docx.TextRun({
                             text: 'BMF Attorney’s fee [Insert Payment Amount] (excluding VAT). The retainer fee can be paid upfront, or month-to-month and the payment terms can be payable as follows:',
@@ -114,7 +112,6 @@ function generate() {
                 }),
                 new docx.Paragraph({
                     size: 12,
-                    alignment: docx.AlignmentType.LEFT,
                     children: [
                         new docx.TextRun({
                             text: 'Upfront:',
@@ -134,7 +131,6 @@ function generate() {
                 }),
                 new docx.Paragraph({
                     size: 12,
-                    alignment: docx.AlignmentType.LEFT,
                     children: [
                         new docx.TextRun({
                             text: 'Nine-twelfths of the fee upon conclusion of the probation period of employment payable on the 7th day of the 4th month.',
@@ -144,7 +140,6 @@ function generate() {
                 }),
                 new docx.Paragraph({
                     size: 12,
-                    alignment: docx.AlignmentType.LEFT,
                     children: [
                         new docx.TextRun({
                             text: 'Month-to-month:',
@@ -154,7 +149,6 @@ function generate() {
                 }),
                 new docx.Paragraph({
                     size: 12,
-                    alignment: docx.AlignmentType.LEFT,
                     children: [
                         new docx.TextRun({
                             text: 'The month-to-month fee shall be paid by the 7th day of each month',
@@ -164,7 +158,6 @@ function generate() {
                 }),
                 new docx.Paragraph({
                     size: 12,
-                    alignment: docx.AlignmentType.LEFT,
                     children: [
                         new docx.TextRun({
                             text: 'No variation or amendment to this Agreement shall be of any effect unless such amendment is put in writing and signed by all parties',
@@ -174,7 +167,6 @@ function generate() {
                 }),
                 new docx.Paragraph({
                     size: 12,
-                    alignment: docx.AlignmentType.LEFT,
                     children: [
                         new docx.TextRun({
                             text: 'Any documentation prepared by BMF Attorneys remains its property',
@@ -185,20 +177,112 @@ function generate() {
                 }),
                 new docx.Paragraph({
                     size: 12,
-                    alignment: docx.AlignmentType.LEFT,
                     children: [
                         new docx.TextRun({
                             text: '2.  Appointment',
+                            bullet:{level:0}
                         }),
                     ]
                 }),
                 new docx.Paragraph({
                     size: 12,
-                    alignment: docx.AlignmentType.LEFT,
                     children: [
                         new docx.TextRun({
                             text: '2.1.	The Client has procured the services of BMF Attorneys and hereby accepts the appointment as an independent contractor of the Client for a fixed period of time.',
                             bullet:{level:1}
+                        }),
+                    ]
+                }),
+                new docx.Paragraph({
+                    size: 12,
+                    children: [
+                        new docx.TextRun({
+                            text: '2.2.	The reason for this fixed-term contract is for the appointment and completion of the [Service Description].',
+                            bullet:{level:1}
+                        }),
+                    ]
+                }),
+                new docx.Paragraph({
+                    size: 12,
+                    children: [
+                        new docx.TextRun({
+                            text: '3.   Duration',
+                            bullet:{level:0}
+                        }),
+                    ]
+                }),
+                new docx.Paragraph({
+                    size: 12,
+                    children: [
+                        new docx.TextRun({
+                            text: '3.1.	Notwithstanding the date of signature hereof, this fixed term contract shall be deemed to have commenced on the [insert start date] and will terminate, without further notice, on the [insert end date]. ',
+                            bullet:{level:1}
+                        }),
+                    ]
+                }),
+                new docx.Paragraph({
+                    size: 12,
+                    children: [
+                        new docx.TextRun({
+                            text: '3.2   The automatic termination of the contract on the Termination Date shall not be construed as a dismissal but as the completion of a fixed term contract.',
+                            bullet:{level:1}
+                        }),
+                        new docx.PageBreak(),
+                    ]
+                }),
+                new docx.Paragraph({
+                    size: 12,
+                    break: 3,
+                    children: [
+                        new docx.TextRun({
+                            text: 'Signed at                        on',
+                            break: 3,
+                        }),
+                    ]
+                }),
+                new docx.Paragraph({
+                    size: 12,
+                    break: 3,
+                    children: [
+                        new docx.TextRun({
+                            text:"-----------------------------------------",
+                            break: 3,
+                        }),
+                    ]
+                }),
+                new docx.Paragraph({
+                    size: 12,
+                    children: [
+                        new docx.TextRun({
+                            text: 'Who warrants authority on behalf of Jobox',
+                        }),
+                    ]
+                }),
+                new docx.Paragraph({
+                    size: 12,
+                    break: 3,
+                    children: [
+                        new docx.TextRun({
+                            text: 'Signed at                        on',
+                            break: 3,
+                        }),
+                    ]
+                }),
+                new docx.Paragraph({
+                    size: 12,
+                    break: 3,
+                    children: [
+                        new docx.TextRun({
+                            text: '-----------------------------------------',
+                            break: 3,
+                        }),
+                    ]
+                }),
+                new docx.Paragraph({
+                    size: 12,
+                    children: [
+                        new docx.TextRun({
+                            text: 'Who warrants authority on behalf of ',
                         }),
                     ]
                 }),
