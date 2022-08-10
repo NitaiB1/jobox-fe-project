@@ -1,0 +1,7 @@
+---
+applications:
+- buildpack: https://github.com/cloudfoundry/staticfile-buildpack.git
+  host: joboxapp-nitaib
+  name: joboxjobapp-nitaib
+  memory: 64M
+  stack: cflinuxfs2
