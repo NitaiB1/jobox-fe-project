@@ -199,7 +199,6 @@ function generate() {
                         new docx.TextRun({
                             text: '2.2.	The reason for this fixed-term contract is for the appointment and completion of the [Service Description].',
                             bullet:{level:1},
-                            break:3,
                         }),
                     ]
                 }),
@@ -208,7 +207,8 @@ function generate() {
                     children: [
                         new docx.TextRun({
                             text: '3.   Duration',
-                            bullet:{level:0}
+                            bullet:{level:0},
+                            break:3,
                         }),
                     ]
                 }),
@@ -237,7 +237,7 @@ function generate() {
                     children: [
                         new docx.TextRun({
                             text: 'Signed at                        on',
-                            break: 3,
+                            break: 5,
                         }),
                     ]
                 }),
@@ -247,7 +247,7 @@ function generate() {
                     children: [
                         new docx.TextRun({
                             text:"-----------------------------------------",
-                            break: 3,
+                            break: 5,
                         }),
                     ]
                 }),
@@ -265,7 +265,7 @@ function generate() {
                     children: [
                         new docx.TextRun({
                             text: 'Signed at                        on',
-                            break: 3,
+                            break: 5,
                         }),
                     ]
                 }),
@@ -275,7 +275,7 @@ function generate() {
                     children: [
                         new docx.TextRun({
                             text: '-----------------------------------------',
-                            break: 3,
+                            break: 5,
                         }),
                     ]
                 }),
@@ -293,9 +293,8 @@ function generate() {
     
     docx.Packer.toBlob(doc).then(blob => {
         console.log(blob);
-        saveAs(blob, "example.docx");
+        saveAs(blob, "nitaib-jobox.docx");
         console.log("Document created successfully");
     });
-    var header = ''
 }
 
