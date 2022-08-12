@@ -25,11 +25,11 @@
     </div>
     <!--This is a collapsable information accordian-->
     <div class="accordion container-fluid" id="accordionOne">
-        <div class="card">
+        <div class="card" id="acc">
             <div class="card-header" id="headingOne">
                 <h5 class="mb-0">
                     <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne"
-                        aria-expanded="false" aria-controls="collapseOne">
+                        aria-expanded="false" aria-controls="collapseOne" id="accBanner">
                         Information
                     </button>
                 </h5>
@@ -130,6 +130,7 @@
                 </div>\
                 <button id="button" type="button" class="btn btn-primary btn-lg" onclick="generate()">Download</button>\
                 ');
+                $('#errors').html('')
             }
         }
 
